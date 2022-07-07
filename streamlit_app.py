@@ -42,6 +42,5 @@ my_cur.execute("SELECT * FROM fruit_load_list")
 my_data_row = my_cur.fetchall()
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit')
-my_cur.execute("insert into fruit_load_list values('" ,add_my_fruit,"'")
-streamlit.write('Thanks for adding ', fruit_choice)
+streamlit.write('Thanks for adding ', add_my_fruit )
 
